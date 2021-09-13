@@ -1,0 +1,25 @@
+.banner {
+  margin: 50px 62px 0;
+  height: 70px;
+  background-color: #3e8ddd;
+  background-image: url(../assets/img/flagLeft.png), url(../assets/img/flagRigth.png);
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;
+
+  @include breakpoint-down(medium) {
+    background-image: none;
+  }
+
+  h2 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: $font-26;
+    font-weight: 400;
+
+    @include breakpoint-down(small) {
+      font-size: $font-20;
+      text-align: center;
+    }
+  }
+}

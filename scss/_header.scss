@@ -1,0 +1,119 @@
+.header {
+  width: 100%;
+
+  &__webBar {
+    height: 75px;
+    &__leftBlock {
+      padding-left: 65px;
+    }
+
+    &__nav {
+      ul {
+        padding-left: 25px;
+        li {
+          font-size: $font-18;
+          display: inline;
+          text-transform: uppercase;
+          margin-right: 40px;
+
+          @include breakpoint-down(large) {
+            font-size: $font-14;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    &__search {
+      &Bar {
+        display: table-cell;
+        height: 40px;
+        width: 300px;
+        border: 1px solid black;
+        border-right: none;
+        padding-left: 20px;
+        border-bottom-left-radius: 6px 6px;
+        outline: none;
+        opacity: 0.7;
+        font-family: inherit;
+        font-size: inherit;
+
+        @include breakpoint-down(large) {
+          width: auto;
+        }
+      }
+
+      &Button {
+        display: table-cell;
+        cursor: pointer;
+        height: 40px;
+        width: 60px;
+        background-color: transparent;
+        border: 1px solid black;
+        border-left: none;
+        border-top-right-radius: 6px 6px;
+        border-bottom-right-radius: 6px 6px;
+        background-color: white;
+        background-image: url("../assets/icons/lupa.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 17px auto;
+        outline: none;
+        opacity: 0.7;
+
+        @include breakpoint-down(large) {
+          width: 40;
+        }
+      }
+    }
+
+    &__rightBlock {
+      align-items: flex-end;
+      padding-right: 25px;
+    }
+
+    &__contact {
+      margin-bottom: 5px;
+      p {
+        font-size: $font-14;
+        color: #797979;
+        margin: 0;
+
+        &:nth-child(1) {
+          margin-right: 15px;
+        }
+
+        &:nth-child(3) {
+          margin-left: 15px;
+        }
+      }
+
+      img {
+        height: 25px;
+      }
+    }
+
+    &__user {
+      img {
+        height: 22px;
+        margin-right: 15px;
+      }
+    }
+
+    &__cart {
+      img {
+        height: 22px;
+      }
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+      height: 201px;
+    }
+  }
+}
